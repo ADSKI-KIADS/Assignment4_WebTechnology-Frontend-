@@ -1,0 +1,148 @@
+:root {
+  --green: #0F6B5F;
+  --amber: #F2A93B;
+  --ink:   #16302B;
+  --soft:  #F4F7F5;
+  --line:  #E6EFEC;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--line);
+  color: var(--ink);
+  min-height: 100vh;
+}
+
+.booking {
+  border: 0;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 1rem 2.5rem rgba(22, 48, 43, .18);
+}
+.booking__header {
+  margin: 0;
+  padding: 1.25rem 1.5rem;
+  background: var(--green);
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.form-label,
+legend.form-label {
+  float: none;
+  font-size: .8rem;
+  font-weight: 600;
+  margin-bottom: .35rem;
+}
+
+.form-control,
+.form-select {
+  background-color: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: .75rem;
+  color: var(--ink);
+  font-size: .85rem;
+}
+.form-control:focus,
+.form-select:focus {
+  background-color: #fff;
+  border-color: var(--green);
+  box-shadow: 0 0 0 .2rem rgba(15, 107, 95, .2);
+}
+
+.form-floating > .form-control {
+  padding-top: 1.625rem;
+  padding-bottom: .625rem;
+}
+.form-floating > .form-control::placeholder {
+  color: var(--ink);
+  opacity: 1;
+}
+.form-floating > label {
+  transform: scale(.85) translateY(-.5rem) translateX(.15rem);
+  opacity: .65;
+  font-size: .8rem;
+}
+.form-floating > .form-control ~ label::after {
+  background-color: transparent !important;
+}
+
+.trip .btn {
+  background: #fff;
+  border: 1px solid var(--green);
+  border-radius: 0;
+  color: var(--green);
+  font-size: .8rem;
+  font-weight: 600;
+  padding: .45rem 1.2rem;
+}
+.trip .btn-check:first-child + .btn { border-radius: 2rem 0 0 2rem; }
+.trip .btn-check:last-of-type + .btn { border-radius: 0 2rem 2rem 0; margin-left: -1px; }
+.trip .btn-check:checked + .btn {
+  background: var(--green);
+  border-color: var(--green);
+  color: #fff;
+}
+.trip .btn-check:focus-visible + .btn {
+  outline: 3px solid var(--amber);
+  outline-offset: 2px;
+}
+
+.form-check-label { font-size: .8rem; }
+.form-check-input:checked {
+  background-color: var(--green);
+  border-color: var(--green);
+}
+.form-check-input:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 .2rem rgba(15, 107, 95, .25);
+}
+
+.input-group-text {
+  background: var(--green);
+  border: 1px solid var(--green);
+  border-radius: .75rem; 
+  color: #fff;
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+
+.btn-find,
+.btn-clear {
+  border-radius: 2rem;
+  font-size: .85rem;
+  font-weight: 700;
+  padding: .65rem 1.75rem;
+}
+.btn-find {
+  background: var(--amber);
+  border: 1px solid var(--amber);
+  color: #000000;
+}
+.btn-find:hover,
+.btn-find:active {
+  background: #e29a2c;
+  border-color: #e29a2c;
+  color: #fff;
+}
+.btn-clear {
+  background: #fff;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  font-weight: 600;
+}
+.btn-clear:hover,
+.btn-clear:active {
+  background: var(--line);
+  border-color: var(--ink);
+  color: var(--ink);
+}
+.btn-find:focus-visible,
+.btn-clear:focus-visible {
+  outline: 3px solid var(--green);
+  outline-offset: 2px;
+  box-shadow: none;
+}
